@@ -17,7 +17,8 @@ define([
             var hourMax = parseInt(window.checkoutConfig.shipping.delivery_date.hourMax);
             var format = window.checkoutConfig.shipping.delivery_date.format;
             if(!format) {
-                format = 'yy-mm-dd';
+                //format = 'yy-mm-dd';
+                format = 'dd-mm-yy';
             }
             var disabledDay = disabled.split(",").map(function(item) {
                 return parseInt(item, 10);
